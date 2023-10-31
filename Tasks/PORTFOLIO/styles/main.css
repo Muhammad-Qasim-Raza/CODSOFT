@@ -27,10 +27,10 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #111;
+    background-color: #222;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 15px 0;
     z-index: 1000;
 }
 
@@ -58,7 +58,7 @@ nav a {
     text-decoration: none;
     color: #fff;
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     transition: color 0.3s;
 }
 
@@ -78,24 +78,46 @@ nav a:hover {
     border-radius: 10px;
     margin: 40px 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    padding-top: 30px;
 }
 
 #about img {
     border-radius: 50%;
-    max-width: 200px;
+    max-width: 250px;
     margin: 20px 0;
     border: 4px solid #ff9900;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 #about h1 {
-    font-size: 3.5rem;
+    font-size: 1.6rem;
     margin: 20px 0;
 }
 
 #about p {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     margin: 20px 0;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+}
+
+.ab1 {
+    width: 37%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.ab2 {
+    width: 57%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
 }
 
 /* Skills Section Styles */
@@ -123,9 +145,9 @@ nav a:hover {
 
 #skills li {
     margin: 0 15px;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     background-color: #ff9900;
-    padding: 10px 20px;
+    padding: 5px 20px;
     border-radius: 5px;
     color: #111;
     transition: background-color 0.3s;
@@ -148,23 +170,42 @@ nav a:hover {
 }
 
 .project-item {
-    margin: 20px;
+    margin: 20px 20px;
     background-color: #333;
     padding: 20px;
     border: 1px solid #ff9900;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    display: inline-block;
+    justify-content: center;
+}
+
+.ProjectContainer {
+    width: 47%;
+}
+
+.ProjectsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projects-content h2 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    color: #ff9900;
 }
 
 .project-item h3 {
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin: 20px 0;
     color: #ff9900;
 }
 
 .project-item p {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     margin: 20px 0;
+    color: #fff;
 }
 
 .project-item img {
@@ -197,7 +238,14 @@ nav a:hover {
     text-decoration: none;
     color: #ff9900;
     font-weight: 700;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    transition: color 0.3s;
+}
+
+#resume p {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
     transition: color 0.3s;
 }
 
@@ -219,10 +267,11 @@ nav a:hover {
 #contact h2 {
     font-size: 2.5rem;
     margin: 20px 0;
+    color: #ff9900;
 }
 
 #contact p {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     margin: 20px 0;
     width: 45%;
     display: inline-block;
@@ -231,7 +280,7 @@ nav a:hover {
 #contact a {
     color: #ff9900;
     text-decoration: none;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     transition: color 0.3s;
     margin-right: 10px;
 }
@@ -241,6 +290,23 @@ nav a:hover {
 }
 
 /* Contact Form Styles */
+
+#contactForm {
+    text-align: center;
+    padding: 40px;
+    background-color: #111;
+    color: #fff;
+    border-radius: 10px;
+    margin: 40px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+#contactForm h2 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    color: #ff9900;
+}
+
 form {
     text-align: left;
     width: 50vw;
@@ -250,7 +316,7 @@ form {
 
 label {
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: 10px 0;
     color: #ff9900;
 }
@@ -260,7 +326,7 @@ input[type="email"],
 textarea {
     width: 100%;
     padding: 10px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin: 5px 0 20px;
     border: 1px solid #fff;
     border-radius: 5px;
@@ -276,7 +342,7 @@ button[type="submit"] {
     background-color: #ff9900;
     color: #111;
     padding: 10px 20px;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -294,24 +360,32 @@ footer {
     color: #ff9900;
     text-align: center;
     padding: 20px 0;
+    font-size: 1.2rem;
     clear: both;
 }
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
-    /* Adjust styles for smaller screens */
 
     header h1 {
-        font-size: 2.5rem;
+        font-size: 2.5rem !important;
     }
 
     header p {
-        font-size: 1.4rem;
+        font-size: 1.4rem !important;
+    }
+
+    nav a {
+        text-decoration: none !important;
+        color: #fff !important;
+        font-weight: 700 !important;
+        font-size: 0.8rem !important;
+        transition: color 0.3s !important;
     }
 
     #about {
         padding: 20px;
-        padding-top: 60px;
+        padding-top: 20px;
     }
 
     #about img {
@@ -319,11 +393,35 @@ footer {
     }
 
     #about h1 {
-        font-size: 2.5rem;
+        font-size: 1.2rem;
+        margin-top: -15px;
     }
 
     #about p {
-        font-size: 1.4rem;
+        font-size: 0.8rem !important;
+        margin-top: 0;
+    }
+
+    .about-content {
+        display: inline-block;
+        justify-content: center;
+    }
+
+    .ab1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-right: 30px;
+    }
+
+    .ab2 {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        margin: 0 auto;
     }
 
     #skills {
@@ -331,24 +429,34 @@ footer {
     }
 
     #skills h2 {
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
 
     #skills li {
-        font-size: 1.4rem;
-        padding: 8px 16px;
+        font-size: 0.8rem;
+        padding: 4px 8px;
     }
 
     #projects {
         padding: 20px;
     }
 
+    .projects-content h2 {
+        font-size: 1.2rem;
+        margin: 20px 0;
+        color: #ff9900;
+    }
+
     #projects h3 {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
     }
 
     #projects p {
-        font-size: 1.4rem;
+        font-size: 0.8rem;
+    }
+
+    .ProjectContainer {
+        width: 100%;
     }
 
     #resume {
@@ -356,11 +464,15 @@ footer {
     }
 
     #resume h2 {
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
 
     #resume a {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
+    }
+
+    #resume p {
+        font-size: 0.8rem;
     }
 
     #contact {
@@ -368,14 +480,20 @@ footer {
     }
 
     #contact h2 {
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
 
     #contact p {
-        font-size: 1.4rem;
+        font-size: 0.8rem;
         margin: 20px 0;
-        width: 98%;
-        display: inline-block;
+    }
+
+    #contact a {
+        color: #ff9900;
+        text-decoration: none;
+        font-size: 1rem;
+        transition: color 0.3s;
+        margin-right: 10px;
     }
 
     form {
@@ -383,5 +501,55 @@ footer {
         width: 70vw;
         display: inline-block;
         justify-content: center;
+    }
+
+    #contactForm {
+        padding: 20px;
+    }
+
+    #contactForm h2 {
+        font-size: 1.2rem;
+        margin: 20px 0;
+        color: #ff9900;
+    }
+
+    label {
+        display: block;
+        font-size: 0.8rem;
+        margin: 10px 0;
+        color: #ff9900;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 0.8rem;
+        margin: 5px 0 15px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        background-color: #111;
+        color: #fff;
+    }
+
+    button[type="submit"] {
+        background-color: #ff9900;
+        color: #111;
+        padding: 5px 10px;
+        font-size: 0.8rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    footer {
+        background-color: #111;
+        color: #ff9900;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 0.8rem;
+        clear: both;
     }
 }
